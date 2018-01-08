@@ -1,5 +1,6 @@
 package com.selenium.HybridFramework.TestBase;
 
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -17,7 +18,7 @@ public class LoginTEST {
 	ExtentReports report = ExtentManager.getInstance();
 	ExtentTest test ;
 	static WebDriver driver;
-	
+	public static Properties OR;
 	@Test
 	public void openURLtest() {
 		test = report.startTest("Reg Test");
