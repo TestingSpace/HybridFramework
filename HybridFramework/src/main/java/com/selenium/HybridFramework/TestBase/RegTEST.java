@@ -75,7 +75,7 @@ public class RegTEST {
 		test1=rep.startTest("New test browser launcher");
 		// first get browser
 		TestBase test = new TestBase();
-		test.getBrowser("chrome");
+		test.getBrowser("firefox");
 		test.driver.get("https://www.google.co.in");
 		String locator = "//*[@id=\"tsf\"]/div[2]/div[3]/center/input[1]";
 		test.getLocator(locator);
