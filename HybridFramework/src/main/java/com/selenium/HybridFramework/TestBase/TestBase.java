@@ -26,6 +26,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -54,7 +55,7 @@ public class TestBase {
 		Calendar calendar = Calendar.getInstance();
 		
 		SimpleDateFormat formater= new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
-		extent = new ExtentReports(System.getProperty("user.dir")+"/src/main/java/com/selenium/HybridFrameWork/Report/test"+formater.format(calendar.getTime())+".html",false);
+		extent = new ExtentReports(System.getProperty("user.dir")+"/src/main/java/com/selenium/HybridFrameWork/Report"+formater.format(calendar.getTime())+".html",false);
 	}
 
 	public void getBrowser(String browser){
@@ -62,20 +63,26 @@ public class TestBase {
 			if(browser.equalsIgnoreCase("firefox")){
 				//https://github.com/mozilla/geckodriver/releases
 				System.out.println(System.getProperty("user.dir"));
-				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/driver/geckodriver1.exe");
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/driver/geckodriver.exe");
 				driver = new FirefoxDriver();
+				//driver.get(url);
 			}
 			else if(browser.equalsIgnoreCase("chrome")){
 				//https://chromedriver.storage.googleapis.com/index.html
 				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/driver/chromedriver.exe");
 				driver = new ChromeDriver();
 			}
+			else if(browser.equalsIgnoreCase("htmlunit")){
+				//https://chromedriver.storage.googleapis.com/index.html
+				//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/driver/chromedriver.exe");
+				 driver = new HtmlUnitDriver();
+			}
 		}
 		else if(System.getProperty("os.name").contains("Mac")){
 			System.out.println(System.getProperty("os.name"));
 			if(browser.equalsIgnoreCase("firefox")){
 				System.out.println(System.getProperty("user.dir"));
-				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/driver/geckodriver1.exe");
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/driver/geckodriver.exe");
 				driver = new FirefoxDriver();
 			}
 			else if(browser.equalsIgnoreCase("chrome")){
@@ -244,7 +251,11 @@ public class TestBase {
 		 *  8)  implicitlywait(*Time) - waiting of mentioned time
 		 *  9)  getResult 0
 		 */ 
-		test.getBrowser("Firefox");
+		//test.getBrowser("Firefox","https://github.com/TestingSpace");
+		//test.getBrowser("htmlunit");
+		//WebDriver driver = new HtmlUnitDriver();
+		test.driver.get("https://github.com/TestingSpace");
+		System.out.println("Success-------------");
 		test.getScreenShot("image1");
 		//test.loadpropertiesFiles();
 		//System.out.println(test.OR.getProperty("username"));

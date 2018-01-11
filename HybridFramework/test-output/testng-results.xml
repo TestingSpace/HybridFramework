@@ -1,30 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="941" started-at="2018-01-08T08:42:00Z" finished-at="2018-01-08T08:42:01Z">
+  <suite name="Default suite" duration-ms="13290" started-at="2018-01-11T05:06:45Z" finished-at="2018-01-11T05:06:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="941" started-at="2018-01-08T08:42:00Z" finished-at="2018-01-08T08:42:01Z">
-      <class name="com.selenium.HybridFramework.TestBase.LoginTEST">
-        <test-method status="FAIL" signature="openURLtest()[pri:0, instance:com.selenium.HybridFramework.TestBase.LoginTEST@176d53b2]" name="openURLtest" duration-ms="196" started-at="2018-01-08T14:12:00Z" finished-at="2018-01-08T14:12:00Z">
-          <exception class="java.lang.IllegalStateException">
+    <test name="Default test" duration-ms="13290" started-at="2018-01-11T05:06:45Z" finished-at="2018-01-11T05:06:58Z">
+      <class name="com.selenium.HybridFramework.TestBase.RegTEST">
+        <test-method status="FAIL" signature="BrowserHelperTest()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@2b4a2ec7]" name="BrowserHelperTest" duration-ms="11906" started-at="2018-01-11T10:36:45Z" finished-at="2018-01-11T10:36:57Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases]]>
+              <![CDATA[unknown error: Runtime.executionContextCreated has invalid 'context': {"auxData":{"frameId":"(AB42BBA4D45AC1FCD8B9EFB2466DF1EC)","isDefault":true},"id":1,"name":"","origin":"://"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.79 seconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'era-PC', ip: '192.168.1.40', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\era\AppData\Local\Temp\scoped_dir2828_13128}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: cd17cf13399036b1a66c61cefb038fef]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:109)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$000(GeckoDriverService.java:37)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:95)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.firefox.FirefoxDriver.createCommandExecutor(FirefoxDriver.java:277)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:247)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:242)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:238)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-	at com.selenium.HybridFramework.TestBase.LoginTEST.openURLtest(LoginTEST.java:25)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Runtime.executionContextCreated has invalid 'context': {"auxData":{"frameId":"(AB42BBA4D45AC1FCD8B9EFB2466DF1EC)","isDefault":true},"id":1,"name":"","origin":"://"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.79 seconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'era-PC', ip: '192.168.1.40', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\era\AppData\Local\Temp\scoped_dir2828_13128}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: cd17cf13399036b1a66c61cefb038fef
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322)
+	at com.selenium.HybridFramework.TestBase.RegTEST.BrowserHelperTest(RegTEST.java:79)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -52,15 +66,47 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openURLtest -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.selenium.HybridFramework.TestBase.LoginTEST@176d53b2]" name="endTest" is-config="true" duration-ms="691" started-at="2018-01-08T14:12:00Z" finished-at="2018-01-08T14:12:01Z">
+        </test-method> <!-- BrowserHelperTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@2b4a2ec7]" name="quit" is-config="true" duration-ms="683" started-at="2018-01-11T10:36:57Z" finished-at="2018-01-11T10:36:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endTest -->
-      </class> <!-- com.selenium.HybridFramework.TestBase.LoginTEST -->
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="bbn()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@2b4a2ec7]" name="bbn" duration-ms="110" started-at="2018-01-11T10:36:57Z" finished-at="2018-01-11T10:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bbn -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@2b4a2ec7]" name="quit" is-config="true" duration-ms="78" started-at="2018-01-11T10:36:58Z" finished-at="2018-01-11T10:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="doRegisterTest()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@2b4a2ec7]" name="doRegisterTest" duration-ms="79" started-at="2018-01-11T10:36:58Z" finished-at="2018-01-11T10:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doRegisterTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@2b4a2ec7]" name="quit" is-config="true" duration-ms="93" started-at="2018-01-11T10:36:58Z" finished-at="2018-01-11T10:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="newtest()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@2b4a2ec7]" name="newtest" duration-ms="78" started-at="2018-01-11T10:36:58Z" finished-at="2018-01-11T10:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newtest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@2b4a2ec7]" name="quit" is-config="true" duration-ms="63" started-at="2018-01-11T10:36:58Z" finished-at="2018-01-11T10:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="voidbn()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@2b4a2ec7]" name="voidbn" duration-ms="78" started-at="2018-01-11T10:36:58Z" finished-at="2018-01-11T10:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- voidbn -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@2b4a2ec7]" name="quit" is-config="true" duration-ms="62" started-at="2018-01-11T10:36:58Z" finished-at="2018-01-11T10:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.selenium.HybridFramework.TestBase.RegTEST -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

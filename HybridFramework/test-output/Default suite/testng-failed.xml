@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.selenium.HybridFramework.TestBase.LoginTEST">
+      <class name="com.selenium.HybridFramework.TestBase.RegTEST">
         <methods>
-          <include name="endTest"/>
-          <include name="openURLtest"/>
+          <include name="BrowserHelperTest"/>
+          <include name="quit"/>
         </methods>
-      </class> <!-- com.selenium.HybridFramework.TestBase.LoginTEST -->
+      </class> <!-- com.selenium.HybridFramework.TestBase.RegTEST -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

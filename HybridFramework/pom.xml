@@ -21,12 +21,19 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-       <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+ <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-server</artifactId>
+    <version>3.8.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>3.0.1</version>
+    <version>3.8.1</version>
 </dependency>
+
     <!-- https://mvnrepository.com/artifact/log4j/log4j -->
 <dependency>
     <groupId>log4j</groupId>
@@ -69,6 +76,11 @@
     <groupId>org.freemarker</groupId>
     <artifactId>freemarker</artifactId>
     <version>2.3.23</version>
+</dependency>
+   <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-htmlunit-driver</artifactId>
+    <version>2.52.0</version>
 </dependency>
    
   </dependencies>
