@@ -1,17 +1,30 @@
 package com.selenium.HybridFramework.helper.Browser;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import com.selenium.HybridFramework.helper.logger.LoggerHelper;
 
 public class BrowserHelper {
 
-	private WebDriver driver;
+	//private WebDriver driver;
+	public WebDriver driver;
 	private Logger Log = LoggerHelper.getLogger(LoggerHelper.class);
+
+	 
 	public BrowserHelper(WebDriver driver) {
 		this.driver = driver;
 		Log.debug("BrowserHelper : " + this.driver.hashCode());

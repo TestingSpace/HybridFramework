@@ -8,8 +8,8 @@ import com.relevantcodes.extentreports.ExtentReports;
 public class ExtentManager {
 	private static ExtentReports extent;
 
-	//static String reportPath = "E:\\Testing-Work\\Maven\\selenium\\ExtReport.html";
-	static String reportPath =(("user.dir")+"/src/main/java/com/selenium/HybridFramework/Report/ExtReport.html");
+	static String reportPath = "E:\\Testing-Work\\Maven\\selenium\\ExtReport.html";
+	//static String reportPath =(("user.dir")+"/src/main/java/com/selenium/HybridFramework/Report/ExtReport.html");
 	public static ExtentReports getInstance() {
 		if (extent == null) {
 			extent = new ExtentReports(reportPath, true,DisplayOrder.NEWEST_FIRST);

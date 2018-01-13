@@ -65,7 +65,7 @@ public class TestBase {
 				System.out.println(System.getProperty("user.dir"));
 				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/driver/geckodriver.exe");
 				driver = new FirefoxDriver();
-				//driver.get(url);
+				 
 			}
 			else if(browser.equalsIgnoreCase("chrome")){
 				//https://chromedriver.storage.googleapis.com/index.html
@@ -116,7 +116,7 @@ public class TestBase {
 			imageName="blank";
 		}
 		Object image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String imageLocation=System.getProperty("user.dir"+"/src/main/java/com/selenium/HybridFrameWork/ScreenShot");
+		String imageLocation=System.getProperty("user.dir"+"/HybridFramework/ScreenShot");
 		Calendar calender = Calendar.getInstance();
 		SimpleDateFormat formater= new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 		String actualImageName=imageLocation+imageName+"_"+formater.format(calender.getTime())+".png";
@@ -251,7 +251,7 @@ public class TestBase {
 		 *  8)  implicitlywait(*Time) - waiting of mentioned time
 		 *  9)  getResult 0
 		 */ 
-		//test.getBrowser("Firefox","https://github.com/TestingSpace");
+		test.getBrowser("Firefox");
 		//test.getBrowser("htmlunit");
 		//WebDriver driver = new HtmlUnitDriver();
 		test.driver.get("https://github.com/TestingSpace");
@@ -263,7 +263,7 @@ public class TestBase {
 		//test.getWebElement("username");
 		//test.getLocators(test.OR.getProperty("username"));
 		//test.getWebElement("password");
-		System.out.println(test.OR.getProperty("url"));
+		//System.out.println(test.OR.getProperty("url"));
 		//
 		//System.out.println(test.OR.getProperty("password"));
 
