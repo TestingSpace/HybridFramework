@@ -76,7 +76,6 @@ public class LoginTEST {
 		
 		
 		
-
 		report.endTest(test);
 		report.flush();
 	}
