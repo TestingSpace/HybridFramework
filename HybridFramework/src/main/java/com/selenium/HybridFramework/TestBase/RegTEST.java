@@ -78,12 +78,21 @@ public class RegTEST {
 		test.getBrowser("firefox");
 		test.driver.get("https://www.google.co.in");
 		//String locator = "//*[@id=\"tsf\"]/div[2]/div[3]/center/input[1]";
+ 
 		test.driver.close();
 		//test.getLocator(locator);
 		
 		//WebDriver driver = null;
 		WebDriver driver = test.driver;
 				test.endtest();
+ 
+		//test.getLocator(locator);
+//		
+//		WebDriver driver = null;
+//		BrowserHelper bh = new BrowserHelper(driver);
+//		bh.refresh();
+		test.endtest();
+  
 
 		rep.endTest(test1);
 		rep.flush();

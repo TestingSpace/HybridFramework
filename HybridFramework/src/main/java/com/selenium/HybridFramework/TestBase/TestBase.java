@@ -90,6 +90,19 @@ public class TestBase {
 				driver = new ChromeDriver();
 			}
 		}
+		else if(System.getProperty("os.name").contains("Linux")){
+			System.out.println(System.getProperty("os.name"));
+			if(browser.equalsIgnoreCase("firefox")){
+				System.out.println(System.getProperty("user.dir"));
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/driver-linux/geckodriver");
+				driver = new FirefoxDriver();
+			}
+			else if(browser.equalsIgnoreCase("chrome")){
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/driver-linux/chromedriver");
+				driver = new ChromeDriver();
+			}
+		}
+		
 	}
 	
 	public void loadpropertiesFiles() throws IOException {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
@@ -23,3 +24,58 @@
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="55373" started-at="2018-01-18T12:37:12Z" finished-at="2018-01-18T12:38:07Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="55373" started-at="2018-01-18T12:37:12Z" finished-at="2018-01-18T12:38:07Z">
+      <class name="com.selenium.HybridFramework.TestBase.RegTEST">
+        <test-method status="PASS" signature="BrowserHelperTest()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@55040f2f]" name="BrowserHelperTest" duration-ms="54379" started-at="2018-01-18T18:07:12Z" finished-at="2018-01-18T18:08:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserHelperTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@55040f2f]" name="quit" is-config="true" duration-ms="90" started-at="2018-01-18T18:08:07Z" finished-at="2018-01-18T18:08:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="bbn()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@55040f2f]" name="bbn" duration-ms="199" started-at="2018-01-18T18:08:07Z" finished-at="2018-01-18T18:08:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bbn -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@55040f2f]" name="quit" is-config="true" duration-ms="73" started-at="2018-01-18T18:08:07Z" finished-at="2018-01-18T18:08:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="doRegisterTest()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@55040f2f]" name="doRegisterTest" duration-ms="97" started-at="2018-01-18T18:08:07Z" finished-at="2018-01-18T18:08:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doRegisterTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@55040f2f]" name="quit" is-config="true" duration-ms="68" started-at="2018-01-18T18:08:07Z" finished-at="2018-01-18T18:08:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="newtest()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@55040f2f]" name="newtest" duration-ms="104" started-at="2018-01-18T18:08:07Z" finished-at="2018-01-18T18:08:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newtest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@55040f2f]" name="quit" is-config="true" duration-ms="113" started-at="2018-01-18T18:08:07Z" finished-at="2018-01-18T18:08:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="voidbn()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@55040f2f]" name="voidbn" duration-ms="71" started-at="2018-01-18T18:08:07Z" finished-at="2018-01-18T18:08:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- voidbn -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.HybridFramework.TestBase.RegTEST@55040f2f]" name="quit" is-config="true" duration-ms="95" started-at="2018-01-18T18:08:07Z" finished-at="2018-01-18T18:08:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.selenium.HybridFramework.TestBase.RegTEST -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
+>>>>>>> 3630b908c92125b06aa47fb5ec7059d6511b61be
