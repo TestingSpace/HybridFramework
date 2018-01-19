@@ -85,7 +85,9 @@ public class ExcelReader {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String excelLocation = "E:\\Testing-Work\\Maven\\selenium\\src\\main\\java\\com\\selenium\\HybridFrameWork\\Data\\data.xlsx";
+		
+		String currentdirectory = System.getProperty("user.dir");
+		String excelLocation = (currentdirectory+"/src/main/java/com/selenium/HybridFramework/Data/data.xlsx");
 		System.out.println(excelLocation);
 		String sheetName = "loginData";
 		ExcelReader excel = new ExcelReader();

@@ -68,7 +68,7 @@ public class LoginTEST {
 		report.flush();
 	}
 	@Test
-	public void TestSecound(){
+	public void TestSecond(){
 		test = report.startTest("JavaScript Helper Tests");
 		test.log(LogStatus.INFO, "-------Test Started-------");
 		JavaScriptHelper JS = new JavaScriptHelper();

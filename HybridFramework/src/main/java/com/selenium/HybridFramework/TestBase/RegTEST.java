@@ -83,15 +83,15 @@ public class RegTEST {
 		//test.getLocator(locator);
 		
 		//WebDriver driver = null;
-		WebDriver driver = test.driver;
-				test.endtest();
+		//WebDriver driver = test.driver;
+		test.endtest();
  
 		//test.getLocator(locator);
 //		
 //		WebDriver driver = null;
 //		BrowserHelper bh = new BrowserHelper(driver);
 //		bh.refresh();
-		test.endtest();
+	
   
 
 		rep.endTest(test1);
