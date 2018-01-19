@@ -13,6 +13,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 
+
 import javax.swing.table.TableStringConverter;
 
 import org.apache.commons.io.FileUtils;
@@ -27,6 +28,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.remote.server.handler.GetScreenOrientation;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -129,7 +131,7 @@ public class TestBase {
 			imageName="blank";
 		}
 		Object image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String imageLocation=System.getProperty("user.dir"+"/HybridFramework/ScreenShot");
+		String imageLocation=(System.getProperty("user.dir")+"/ScreenShots/ScreenShot");
 		Calendar calender = Calendar.getInstance();
 		SimpleDateFormat formater= new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 		String actualImageName=imageLocation+imageName+"_"+formater.format(calender.getTime())+".png";
@@ -252,7 +254,7 @@ public class TestBase {
 		
 	}
 	public static void main(String[] args) throws Exception {
-		TestBase test = new TestBase();
+		
 		/* Function list 
 		 *  1)  getBrowser - open browser
 		 *  2)  getScreenShot - capture screen shot
@@ -263,13 +265,14 @@ public class TestBase {
 		 *  7)  getWebElements - list of elements
 		 *  8)  implicitlywait(*Time) - waiting of mentioned time
 		 *  9)  getResult 0
-		 */ 
-		test.getBrowser("Firefox");
+		 */
+		
+		//test.getBrowser("Firefox");
 		//test.getBrowser("htmlunit");
 		//WebDriver driver = new HtmlUnitDriver();
-		test.driver.get("https://github.com/TestingSpace");
-		System.out.println("Success-------------");
-		test.getScreenShot("image1");
+		//test.driver.get("https://github.com/TestingSpace");
+		//System.out.println("Success-------------");
+		//test.getScreenShot("image1");
 		//test.loadpropertiesFiles();
 		//System.out.println(test.OR.getProperty("username"));
 		//test.getWebElement(test.OR.getProperty("username"));

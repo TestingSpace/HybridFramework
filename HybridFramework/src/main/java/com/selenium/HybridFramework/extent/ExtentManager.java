@@ -2,14 +2,15 @@ package com.selenium.HybridFramework.extent;
 
 import java.io.File;
 
+import com.beust.jcommander.Strings;
 import com.relevantcodes.extentreports.DisplayOrder;
 import com.relevantcodes.extentreports.ExtentReports;
 
 public class ExtentManager {
 	private static ExtentReports extent;
 
-	//static String reportPath = "E:\\Testing-Work\\Maven\\selenium\\ExtReport.html";
-	static String reportPath =(("user.dir")+"/HybridFramework/ExtReport.html");
+
+	static String reportPath = (("Report")+"/ExtReport.html");
 	public static ExtentReports getInstance() {
 		if (extent == null) {
 			extent = new ExtentReports(reportPath, true,DisplayOrder.NEWEST_FIRST);
@@ -18,5 +19,5 @@ public class ExtentManager {
 		}
 		return extent;
 		
-	}
+	} 
 }
