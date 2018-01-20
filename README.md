@@ -1,5 +1,5 @@
 # HybridFramework
-Hybrid Framework developed using Selenium/Java with TestNG , Maven , Extent reports , Page Object Model , Log4J support
+Hybrid Framework developed using Selenium/Java with TestNG , Maven , Extent reports , Page Object Model , Log4J support.
 
 Extent Report :
 ![report](https://user-images.githubusercontent.com/33172793/34905715-be4a8c4a-f884-11e7-897b-5435b22fe91b.png)
