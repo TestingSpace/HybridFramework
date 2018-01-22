@@ -3,6 +3,7 @@ package com.selenium.HybridFramework.TestBase;
 import java.util.List;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.sql.Driver;
@@ -11,6 +12,9 @@ import java.util.Calendar;
 import java.util.NoSuchElementException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
+
+
 
 
 
@@ -45,8 +49,12 @@ import com.relevantcodes.extentreports.LogStatus;
 public class TestBase {
 	public static final Logger logger = Logger.getLogger(TestBase.class.getName());
 	public WebDriver driver;
-	public Properties OR;
+	public static Properties OR;
+	public static Properties rtmedia;
+	public static Properties config;
 	public File f1;
+	public File f2;
+	public File f3;
 	public FileInputStream file;
 	private Object calendar;
 	public static ExtentReports extent;
@@ -103,35 +111,62 @@ public class TestBase {
 				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/driver-linux/chromedriver");
 				driver = new ChromeDriver();
 			}
+			else if(browser.equalsIgnoreCase("htmlunit")){
+				//https://chromedriver.storage.googleapis.com/index.html
+				//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/driver/chromedriver.exe");
+				 driver = new HtmlUnitDriver();
+			}
 		}
 		
 	}
-	
+	public void geturl(){
+		try {
+			TestBase gu = new TestBase();
+			gu.loadpropertiesFiles();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		String url = rtmedia.getProperty("url");
+		driver.get(url);
+		logger.info("opening URL = "+url);
+	}
+
+	public void geturlmedia(){
+		try {
+			TestBase gu = new TestBase();
+			gu.loadpropertiesFiles();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		String url = rtmedia.getProperty("mediaurl");
+		driver.get(url);
+		logger.info("opening URL = "+url);
+	}
 	public void loadpropertiesFiles() throws IOException {
 		String log4jConfPath = "log4j.properties";
 		PropertyConfigurator.configure(log4jConfPath);
 		 OR = new Properties();
-		f1 = new File(System.getProperty("user.dir")+"/src/main/java/com/HybridFramework/Config/config.properties");
+		f1 = new File(System.getProperty("user.dir")+"/src/main/java/com/selenium/HybridFramework/config/or.properties");
 		file = new FileInputStream(f1);
 		OR.load(file);
 		logger.info("loading cofig.properties");
-		
-		f1 = new File(System.getProperty("user.dir")+"/src/main/java/com/HybridFramework/Config/or.properties");
-		file = new FileInputStream(f1);
-		OR.load(file);
-		logger.info("loading or.properties");
-		
-		f1 = new File(System.getProperty("user.dir")+"/src/main/java/com/selenium/HybridFrameWork/Properties/homepage.properties");
-		file = new FileInputStream(f1);
-		OR.load(file);
-		logger.info("loading homepage.properties");
+		config = new Properties();
+		f2 = new File(System.getProperty("user.dir")+"/src/main/java/com/selenium/HybridFramework/config/config.properties");
+		file = new FileInputStream(f2);
+		config.load(file);
+		logger.info("loading config.properties");
+		rtmedia = new Properties();
+		f3 = new File(System.getProperty("user.dir")+"/src/main/java/com/selenium/HybridFramework/config/rtmedia.properties");
+		file = new FileInputStream(f3);
+		rtmedia.load(file);
+		logger.info("loading rtmedia.properties");
 	}
 	public String getScreenShot(String imageName) throws IOException {
 		if(imageName.equals("")) {
 			imageName="blank";
 		}
 		Object image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String imageLocation=(System.getProperty("user.dir")+"/ScreenShots/ScreenShot");
+		String imageLocation=(System.getProperty("user.dir")+"/ScreenShot");
 		Calendar calender = Calendar.getInstance();
 		SimpleDateFormat formater= new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 		String actualImageName=imageLocation+imageName+"_"+formater.format(calender.getTime())+".png";
@@ -212,47 +247,44 @@ public class TestBase {
 		else throw new Exception("Unknown locator type'"+locatorType+"'");
 	
 	}
-	public WebElement getLocator(String locator) throws Exception {
-		String[] split = locator.split(":");
-		String locatorType =split[0];
-		String locatorValue =split[1];
-		System.out.println(locator);
-		System.out.println("locatorType:-"+locatorType);
-		System.out.println("locatorValue:-"+locatorValue);
-		if (locatorType.toLowerCase().equals("id"))	
-			return driver.findElement(By.id(locatorValue));
-		else if (locatorType.toLowerCase().equals("name"))	
-			return driver.findElement(By.name(locatorValue));
-		else if ((locatorType.toLowerCase().equals("classname"))	
-			||  (locatorType.toLowerCase().equals("class")))
-			return driver.findElement(By.className(locatorValue));
-		else if ((locatorType.toLowerCase().equals("tagname"))	
-				||  (locatorType.toLowerCase().equals("tag")))
-				return driver.findElement(By.className(locatorValue));
-		else if ((locatorType.toLowerCase().equals("linktesxt"))	
-				||  (locatorType.toLowerCase().equals("link")))
-				return driver.findElement(By.linkText(locatorValue));
 
-		else if (locatorType.toLowerCase().equals("partialinktext"))	
+	public WebElement getLocator(String locator) throws Exception {
+		//System.out.println(locator);
+        String[] split = locator.split(":");
+		String locatorType = split[0];
+		String locatorValue = split[1];
+	System.out.println("locatorType:-"+locatorType);
+	System.out.println("locatorValue:-"+locatorValue);
+		if (locatorType.toLowerCase().equals("id"))
+			return driver.findElement(By.id(locatorValue));
+		else if (locatorType.toLowerCase().equals("name"))
+			return driver.findElement(By.name(locatorValue));
+		else if ((locatorType.toLowerCase().equals("classname"))|| (locatorType.toLowerCase().equals("class")))
+			return driver.findElement(By.className(locatorValue));
+		else if ((locatorType.toLowerCase().equals("tagname"))
+				|| (locatorType.toLowerCase().equals("tag")))
+			return driver.findElement(By.className(locatorValue));
+		else if ((locatorType.toLowerCase().equals("linktext"))
+				|| (locatorType.toLowerCase().equals("link")))
+			return driver.findElement(By.linkText(locatorValue));
+		else if (locatorType.toLowerCase().equals("partiallinktext"))
 			return driver.findElement(By.partialLinkText(locatorValue));
-		else if ((locatorType.toLowerCase().equals("csssector"))	
-				||  (locatorType.toLowerCase().equals("css")))
-				return driver.findElement(By.cssSelector(locatorValue));
-		else if (locatorType.toLowerCase().equals("xpath"))	
+		else if ((locatorType.toLowerCase().equals("cssselector"))
+				|| (locatorType.toLowerCase().equals("css")))
+			return driver.findElement(By.cssSelector(locatorValue));
+		else if (locatorType.toLowerCase().equals("xpath"))
 			return driver.findElement(By.xpath(locatorValue));
-		else throw new Exception("Unknown locator type'"+locatorType+"'");
-	
-	}
+		else
+			throw new Exception("Unknown locator type '" + locatorType + "'");
+}
 	public WebElement getWebElement(String locator) throws Exception{
-		return getLocator(OR.getProperty(locator));
+		return getLocator(rtmedia.getProperty(locator));
 	}
 
 	public List<WebElement> getWebElements(String locator) throws Exception{
-		return getLocators(OR.getProperty(locator));
+		return getLocators(rtmedia.getProperty(locator));
 	}
-	public void getpropertiesData() {
-		
-	}
+	
 	public static void main(String[] args) throws Exception {
 		
 		/* Function list 
@@ -266,21 +298,37 @@ public class TestBase {
 		 *  8)  implicitlywait(*Time) - waiting of mentioned time
 		 *  9)  getResult 0
 		 */
-		
-		//test.getBrowser("Firefox");
-		//test.getBrowser("htmlunit");
-		//WebDriver driver = new HtmlUnitDriver();
-		//test.driver.get("https://github.com/TestingSpace");
-		//System.out.println("Success-------------");
-		//test.getScreenShot("image1");
+		//TestBase test = new TestBase();
 		//test.loadpropertiesFiles();
-		//System.out.println(test.OR.getProperty("username"));
-		//test.getWebElement(test.OR.getProperty("username"));
-		//test.getWebElement("username");
-		//test.getLocators(test.OR.getProperty("username"));
-		//test.getWebElement("password");
-		//System.out.println(test.OR.getProperty("url"));
-		//
+//		//System.out.println(test.OR.getProperty("username"));
+//		System.out.println(test.getPropertiesData("url");
+
+//System.out.println(System.getProperty("user.dir"));
+//		TestBase test1 = new TestBase();
+//		test1.loadpropertiesFiles();
+//		test1.getBrowser("firefox");
+//		System.out.println(test1.rtmedia.getProperty("username"));
+//		
+//		test1.geturl();
+//		 test1.getWebElement("username").sendKeys("demo");
+//
+//		 test1.getWebElement("password").sendKeys("demo");
+//
+//		 test1.getWebElement("submitbutton").click();
+		//test.getBrowser("Firefox");
+//		test.getBrowser("htmlunit");
+//		//WebDriver driver = new HtmlUnitDriver();
+//		test.driver.get("https://github.com/TestingSpace");
+//		System.out.println("Success-------------");
+//		//test.getScreenShot("image1");
+//		test.loadpropertiesFiles();
+//		System.out.println(test.OR.getProperty("username"));
+//		test.getWebElement(test.OR.getProperty("username"));
+//		test.getWebElement("username");
+//		test.getLocators(test.OR.getProperty("username"));
+//		test.getWebElement("password");
+//		System.out.println(test.OR.getProperty("url"));
+//		//
 		//System.out.println(test.OR.getProperty("password"));
 
 		 

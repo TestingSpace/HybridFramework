@@ -20,6 +20,8 @@ public class DropDownHelper {
 		Log.debug("DropDownHelper : " + this.driver.hashCode());
 	}
 	public void selectUsingVisibleValue(WebElement element, String VisibleValue) {
+
+		Log.info("selecting DropDown menu");
 		Select select = new Select(element);
 		select.selectByVisibleText(VisibleValue);
 		Log.info("Locator :" + element + " value :" + VisibleValue);
@@ -29,14 +31,16 @@ public class DropDownHelper {
 		Log.info("Locator :" + element + " value :" + value );
 		return value;
 	}
-	public void selectedIndex(WebElement element, int intval) {
+	public void selectUsingIndex(WebElement element, int intval) {
+		Log.info("selecting DropDown menu");
 		Select select = new Select(element);
 		select.selectByIndex(intval);
 		Log.info("Locator :" + element + " value :" + intval );
 	}
-	public void selectUsingVisibleText(WebElement element , String text) {
+	public void selectbyvalue(WebElement element , String text) {
+		Log.info("selecting DropDown menu");
 		Select select = new Select(element);
-		select.deselectByVisibleText(text);
+		select.selectByValue(text);
 		Log.info("Locator :" + element + " value :" + text );
 	}
 	public List<String> getAllDropdownValues(WebElement locator ) {

@@ -50,7 +50,7 @@ public class GenericHelper {
 			return true;
 		}
 	}
-	public String getDisplatText(WebElement element) {
+	public String getDisplayedText(WebElement element) {
 		if (null == element) {
 			return null;
 		}
