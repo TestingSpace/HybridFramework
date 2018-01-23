@@ -257,3 +257,147 @@
 22-01-2018 12:19:14 INFO  TestBase:157 - loading config.properties
 22-01-2018 12:19:14 INFO  TestBase:162 - loading rtmedia.properties
 22-01-2018 12:19:20 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+22-01-2018 14:39:48 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 14:39:48 INFO  TestBase:157 - loading config.properties
+22-01-2018 14:39:48 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 14:40:21 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+22-01-2018 14:40:37 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 14:40:37 INFO  TestBase:157 - loading config.properties
+22-01-2018 14:40:37 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 14:40:47 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+22-01-2018 14:41:50 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 14:41:51 INFO  TestBase:157 - loading config.properties
+22-01-2018 14:41:51 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 14:42:13 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+22-01-2018 14:42:34 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 14:42:34 INFO  TestBase:157 - loading config.properties
+22-01-2018 14:42:34 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 14:42:49 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+22-01-2018 15:04:22 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 15:04:22 INFO  TestBase:157 - loading config.properties
+22-01-2018 15:04:22 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 15:05:30 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+22-01-2018 15:05:48 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 15:05:48 INFO  TestBase:157 - loading config.properties
+22-01-2018 15:05:48 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 15:05:57 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+22-01-2018 15:26:20 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 15:26:20 INFO  TestBase:157 - loading config.properties
+22-01-2018 15:26:20 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 15:26:50 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+22-01-2018 15:26:56 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 15:26:56 INFO  TestBase:157 - loading config.properties
+22-01-2018 15:26:56 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 15:27:03 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+22-01-2018 16:58:18 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 16:58:18 INFO  TestBase:157 - loading config.properties
+22-01-2018 16:58:18 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 16:58:52 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+22-01-2018 16:59:03 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 16:59:03 INFO  TestBase:157 - loading config.properties
+22-01-2018 16:59:03 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 16:59:07 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+22-01-2018 18:22:15 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 18:22:15 INFO  TestBase:157 - loading config.properties
+22-01-2018 18:22:16 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 18:22:50 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+22-01-2018 18:23:01 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 18:23:01 INFO  TestBase:157 - loading config.properties
+22-01-2018 18:23:01 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 18:23:06 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+22-01-2018 18:27:14 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 18:27:14 INFO  TestBase:157 - loading config.properties
+22-01-2018 18:27:15 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 18:27:26 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+22-01-2018 18:27:34 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 18:27:34 INFO  TestBase:157 - loading config.properties
+22-01-2018 18:27:34 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 18:27:38 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+22-01-2018 18:30:23 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 18:30:23 INFO  TestBase:157 - loading config.properties
+22-01-2018 18:30:23 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 18:30:36 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+22-01-2018 18:30:43 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 18:30:43 INFO  TestBase:157 - loading config.properties
+22-01-2018 18:30:43 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 18:30:47 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+22-01-2018 18:33:09 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 18:33:09 INFO  TestBase:157 - loading config.properties
+22-01-2018 18:33:09 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 18:33:24 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+22-01-2018 18:33:31 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 18:33:31 INFO  TestBase:157 - loading config.properties
+22-01-2018 18:33:31 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 18:33:39 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+22-01-2018 18:41:50 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 18:41:50 INFO  TestBase:157 - loading config.properties
+22-01-2018 18:41:50 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 18:42:02 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+22-01-2018 18:42:09 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 18:42:09 INFO  TestBase:157 - loading config.properties
+22-01-2018 18:42:09 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 18:42:13 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+22-01-2018 18:43:39 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 18:43:39 INFO  TestBase:157 - loading config.properties
+22-01-2018 18:43:39 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 18:43:51 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+22-01-2018 18:43:59 INFO  TestBase:152 - loading cofig.properties
+22-01-2018 18:43:59 INFO  TestBase:157 - loading config.properties
+22-01-2018 18:43:59 INFO  TestBase:162 - loading rtmedia.properties
+22-01-2018 18:44:02 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+23-01-2018 11:08:51 INFO  TestBase:152 - loading cofig.properties
+23-01-2018 11:08:51 INFO  TestBase:157 - loading config.properties
+23-01-2018 11:08:51 INFO  TestBase:162 - loading rtmedia.properties
+23-01-2018 11:09:22 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+23-01-2018 11:09:35 INFO  TestBase:152 - loading cofig.properties
+23-01-2018 11:09:35 INFO  TestBase:157 - loading config.properties
+23-01-2018 11:09:35 INFO  TestBase:162 - loading rtmedia.properties
+23-01-2018 11:09:53 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+23-01-2018 11:14:15 INFO  TestBase:152 - loading cofig.properties
+23-01-2018 11:14:15 INFO  TestBase:157 - loading config.properties
+23-01-2018 11:14:15 INFO  TestBase:162 - loading rtmedia.properties
+23-01-2018 11:14:33 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+23-01-2018 11:14:44 INFO  TestBase:152 - loading cofig.properties
+23-01-2018 11:14:44 INFO  TestBase:157 - loading config.properties
+23-01-2018 11:14:44 INFO  TestBase:162 - loading rtmedia.properties
+23-01-2018 11:14:49 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+23-01-2018 11:17:11 INFO  TestBase:152 - loading cofig.properties
+23-01-2018 11:17:11 INFO  TestBase:157 - loading config.properties
+23-01-2018 11:17:11 INFO  TestBase:162 - loading rtmedia.properties
+23-01-2018 11:17:22 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+23-01-2018 11:17:30 INFO  TestBase:152 - loading cofig.properties
+23-01-2018 11:17:30 INFO  TestBase:157 - loading config.properties
+23-01-2018 11:17:30 INFO  TestBase:162 - loading rtmedia.properties
+23-01-2018 11:17:35 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+23-01-2018 11:56:57 INFO  TestBase:152 - loading cofig.properties
+23-01-2018 11:56:57 INFO  TestBase:157 - loading config.properties
+23-01-2018 11:56:57 INFO  TestBase:162 - loading rtmedia.properties
+23-01-2018 11:57:23 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+23-01-2018 11:57:31 INFO  TestBase:152 - loading cofig.properties
+23-01-2018 11:57:31 INFO  TestBase:157 - loading config.properties
+23-01-2018 11:57:31 INFO  TestBase:162 - loading rtmedia.properties
+23-01-2018 11:57:36 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+23-01-2018 12:03:15 INFO  TestBase:152 - loading cofig.properties
+23-01-2018 12:03:15 INFO  TestBase:157 - loading config.properties
+23-01-2018 12:03:15 INFO  TestBase:162 - loading rtmedia.properties
+23-01-2018 12:03:37 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+23-01-2018 12:03:45 INFO  TestBase:152 - loading cofig.properties
+23-01-2018 12:03:45 INFO  TestBase:157 - loading config.properties
+23-01-2018 12:03:45 INFO  TestBase:162 - loading rtmedia.properties
+23-01-2018 12:03:51 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+23-01-2018 12:09:02 INFO  TestBase:152 - loading cofig.properties
+23-01-2018 12:09:02 INFO  TestBase:157 - loading config.properties
+23-01-2018 12:09:02 INFO  TestBase:162 - loading rtmedia.properties
+23-01-2018 12:09:14 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+23-01-2018 12:09:23 INFO  TestBase:152 - loading cofig.properties
+23-01-2018 12:09:23 INFO  TestBase:157 - loading config.properties
+23-01-2018 12:09:23 INFO  TestBase:162 - loading rtmedia.properties
+23-01-2018 12:09:27 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/
+23-01-2018 12:14:33 INFO  TestBase:152 - loading cofig.properties
+23-01-2018 12:14:33 INFO  TestBase:157 - loading config.properties
+23-01-2018 12:14:33 INFO  TestBase:162 - loading rtmedia.properties
+23-01-2018 12:14:48 INFO  TestBase:131 - opening URL = http://demo.rtmedia.io/
+23-01-2018 12:14:56 INFO  TestBase:152 - loading cofig.properties
+23-01-2018 12:14:56 INFO  TestBase:157 - loading config.properties
+23-01-2018 12:14:56 INFO  TestBase:162 - loading rtmedia.properties
+23-01-2018 12:15:18 INFO  TestBase:143 - opening URL = http://demo.rtmedia.io/members/demo/media/

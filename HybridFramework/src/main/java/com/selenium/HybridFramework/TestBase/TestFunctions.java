@@ -1,9 +1,14 @@
 package com.selenium.HybridFramework.TestBase;
 
 import java.io.IOException;
+import java.util.Scanner;
 
+import org.eclipse.jetty.util.Scanner.ScanCycleListener;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.sikuli.script.Pattern;
+import org.sikuli.script.Screen;
 
 import com.gargoylesoftware.htmlunit.WebConsole.Logger;
 import com.relevantcodes.extentreports.ExtentReports;
@@ -51,7 +56,7 @@ public class TestFunctions {
 	public void uploadmedia() throws Exception{
 		TB.getWebElement("postmedia").sendKeys("Test image uplaod");
 		Thread.sleep(4000);
-		TB.getWebElement("mediabutton").sendKeys("/home/abc/Pictures/Wallpapers/mbuntu-3.jpg");
+		TB.getWebElement("mediabutton").sendKeys("C:/Users/era/Pictures/brazil.png");
 		TB.getWebElement("postbutton").click();
 	}
 	public void uploadmediabyurl() throws Exception{
@@ -101,13 +106,26 @@ public class TestFunctions {
 		TB.getWebElement("uploadbutton").click();
 		//TB.getWebElement("mediadropdown").click();
 		//TB.getWebElement("mediaprivacy").click();
-		Thread.sleep(4000);
-		TB.getWebElement("dragarea").sendKeys("/home/abc/Pictures/Wallpapers/mbuntu-3.jpg");
-		TB.getWebElement("termscheckbox").click();
-		WebElement element = TB.getWebElement("startuploadbutton");
-		TB.waitForElement(TB.driver, 4, element);
-		TB.getWebElement("startuploadbutton").click();
+		Thread.sleep(5000);
+		 
+        Pattern button1 = new Pattern("D:\\button1.PNG");
+        Pattern button2 = new Pattern("D:\\button2.PNG");
+        Pattern button3 = new Pattern("D:\\button3.PNG");
+        
+        Screen screen = new Screen();
+        TB.getWebElement("selectfilebutton").click();
+        
+        
+        screen.type("\"C:\\Users\\era\\Pictures\\brazil.png\"");
+        Thread.sleep(3000);
+       // screen.type(button2, "C:/Users/era/Pictures/brazil.png");
+        screen.click(button3);
 		
+		TB.getWebElement("termscheckbox").click();
+		//Runtime.getRuntime().exec("C:\\Users\\era\\Desktop\\autoIT\\t.exe");
+		Thread.sleep(5000);
+		TB.getWebElement("startuploadbutton1").click();
+		Thread.sleep(6000);
 		
 	}
 }

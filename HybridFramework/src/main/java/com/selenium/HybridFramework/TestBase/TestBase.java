@@ -65,7 +65,7 @@ public class TestBase {
 		Calendar calendar = Calendar.getInstance();
 		
 		SimpleDateFormat formater= new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
-		extent = new ExtentReports(System.getProperty("user.dir")+"/src/main/java/com/selenium/HybridFrameWork/Report"+formater.format(calendar.getTime())+".html",false);
+		extent = new ExtentReports(System.getProperty("user.dir")+"/Report"+formater.format(calendar.getTime())+".html",false);
 	}
 
 	public void getBrowser(String browser){
@@ -166,7 +166,7 @@ public class TestBase {
 			imageName="blank";
 		}
 		Object image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String imageLocation=(System.getProperty("user.dir")+"/ScreenShot");
+		String imageLocation=(System.getProperty("user.dir")+"/ScreenShots");
 		Calendar calender = Calendar.getInstance();
 		SimpleDateFormat formater= new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 		String actualImageName=imageLocation+imageName+"_"+formater.format(calender.getTime())+".png";
