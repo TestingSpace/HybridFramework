@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="154873" started-at="2018-02-19T00:33:48Z" finished-at="2018-02-19T00:36:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="154873" started-at="2018-02-19T00:33:48Z" finished-at="2018-02-19T00:36:23Z">
+      <class name="TopIMDB250.Top250Test">
+        <test-method status="PASS" signature="droptable()[pri:0, instance:TopIMDB250.Top250Test@fdefd3f]" name="droptable" is-config="true" duration-ms="1580" started-at="2018-02-19T06:03:48Z" finished-at="2018-02-19T06:03:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- droptable -->
+        <test-method status="PASS" signature="GetURL()[pri:1, instance:TopIMDB250.Top250Test@fdefd3f]" name="GetURL" duration-ms="21502" started-at="2018-02-19T06:03:50Z" finished-at="2018-02-19T06:04:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetURL -->
+        <test-method status="PASS" signature="NavigateInIMDB()[pri:2, instance:TopIMDB250.Top250Test@fdefd3f]" name="NavigateInIMDB" duration-ms="6764" started-at="2018-02-19T06:04:11Z" finished-at="2018-02-19T06:04:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateInIMDB -->
+        <test-method status="PASS" signature="FetchData()[pri:3, instance:TopIMDB250.Top250Test@fdefd3f]" name="FetchData" duration-ms="121915" started-at="2018-02-19T06:04:18Z" finished-at="2018-02-19T06:06:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FetchData -->
+        <test-method status="PASS" signature="CreateFile()[pri:4, instance:TopIMDB250.Top250Test@fdefd3f]" name="CreateFile" duration-ms="3031" started-at="2018-02-19T06:06:20Z" finished-at="2018-02-19T06:06:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateFile -->
+      </class> <!-- TopIMDB250.Top250Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
